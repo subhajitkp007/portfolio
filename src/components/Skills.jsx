@@ -1,63 +1,61 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
-  FiCode, FiDatabase, FiServer, FiGlobe, FiTool, FiLayers,
+  FiDatabase, FiServer, FiGlobe, FiTool,
 } from 'react-icons/fi';
 import {
-  SiReact, SiNodedotjs, SiJavascript, SiTypescript, SiPython,
-  SiHtml5, SiMongodb, SiPostgresql, SiMysql,
-  SiGit, SiDocker, SiTailwindcss, SiNextdotjs,
-  SiExpress, SiRedis, SiLinux, SiFigma, SiSpringboot,
+  SiTypescript, SiPython, SiGooglebigquery, SiGooglecloud,
+  SiApachespark, SiApachekafka, SiGoogle,
+  SiOpenai, SiLangchain,
 } from 'react-icons/si';
 import { FiCloud } from 'react-icons/fi';
 import './Skills.css';
 
 const skillCategories = [
   {
-    icon: FiGlobe,
-    title: 'Frontend',
+    icon: FiTool,
+    title: 'AI & GenAI',
     color: '#6c63ff',
     skills: [
-      { name: 'React.js', icon: SiReact, level: 90 },
-      { name: 'JavaScript', icon: SiJavascript, level: 88 },
-      { name: 'TypeScript', icon: SiTypescript, level: 80 },
-      { name: 'Next.js', icon: SiNextdotjs, level: 78 },
-      { name: 'HTML5/CSS3', icon: SiHtml5, level: 95 },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 85 },
+      { name: 'Generative AI', icon: SiOpenai, level: 93 },
+      { name: 'Artificial Intelligence (AI)', icon: SiOpenai, level: 87 },
+      { name: 'Agentic AI Development', icon: SiOpenai, level: 85 },
+      { name: 'Retrieval-Augmented Generation (RAG)', icon: SiLangchain, level: 86 },
+      { name: 'Google Gemini', icon: SiGoogle, level: 83 },
+      { name: 'Prompt Engineering', icon: SiOpenai, level: 81 },
     ],
   },
   {
     icon: FiServer,
-    title: 'Backend',
+    title: 'Architecture',
     color: '#00d4ff',
     skills: [
-      { name: 'Node.js', icon: SiNodedotjs, level: 85 },
-      { name: 'Express.js', icon: SiExpress, level: 83 },
-      { name: 'Python', icon: SiPython, level: 78 },
-      { name: 'Spring Boot', icon: SiSpringboot, level: 70 },
+      { name: 'Data Architecture', icon: FiServer, level: 94 },
+      { name: 'Solution Architecture', icon: FiServer, level: 92 },
+      { name: 'Architectural Design', icon: FiServer, level: 91 },
+      { name: 'Model Context Protocol (MCP)', icon: FiServer, level: 88 },
     ],
   },
   {
     icon: FiDatabase,
-    title: 'Database',
+    title: 'Data & Cloud',
     color: '#ff6b6b',
     skills: [
-      { name: 'MongoDB', icon: SiMongodb, level: 82 },
-      { name: 'PostgreSQL', icon: SiPostgresql, level: 78 },
-      { name: 'MySQL', icon: SiMysql, level: 80 },
-      { name: 'Redis', icon: SiRedis, level: 65 },
+      { name: 'Google BigQuery', icon: SiGooglebigquery, level: 87 },
+      { name: 'Google Cloud Platform (GCP)', icon: SiGooglecloud, level: 85 },
+      { name: 'Apache Spark', icon: SiApachespark, level: 88 },
+      { name: 'Apache Kafka', icon: SiApachekafka, level: 82 },
     ],
   },
   {
-    icon: FiTool,
-    title: 'DevOps & Tools',
+    icon: FiGlobe,
+    title: 'Programming',
     color: '#ffc107',
     skills: [
-      { name: 'Git', icon: SiGit, level: 90 },
-      { name: 'Docker', icon: SiDocker, level: 72 },
-      { name: 'AWS', icon: FiCloud, level: 68 },
-      { name: 'Linux', icon: SiLinux, level: 75 },
-      { name: 'Figma', icon: SiFigma, level: 70 },
+      { name: 'Python', icon: SiPython, level: 91 },
+      { name: 'TypeScript', icon: SiTypescript, level: 74 },
+      { name: 'LangChain', icon: SiLangchain, level: 82 },
+      { name: 'Cloud Engineering', icon: FiCloud, level: 84 },
     ],
   },
 ];
@@ -124,14 +122,15 @@ function CategoryCard({ cat, index, inView }) {
 }
 
 const techStack = [
-  { name: 'React', icon: SiReact, color: '#61DAFB' },
-  { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-  { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-  { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-  { name: 'Docker', icon: SiDocker, color: '#2496ED' },
-  { name: 'AWS', icon: FiCloud, color: '#FF9900' },
+  { name: 'Generative AI', icon: SiOpenai, color: '#10a37f' },
+  { name: 'Google Gemini', icon: SiGoogle, color: '#4285F4' },
+  { name: 'RAG', icon: SiLangchain, color: '#1C3C3C' },
+  { name: 'Google BigQuery', icon: SiGooglebigquery, color: '#669DF6' },
+  { name: 'GCP', icon: SiGooglecloud, color: '#4285F4' },
+  { name: 'Apache Spark', icon: SiApachespark, color: '#E25A1C' },
+  { name: 'Apache Kafka', icon: SiApachekafka, color: '#231F20' },
   { name: 'Python', icon: SiPython, color: '#3776AB' },
-  { name: 'Next.js', icon: SiNextdotjs, color: '#ffffff' },
+  { name: 'MCP', icon: FiServer, color: '#00d4ff' },
 ];
 
 export default function Skills() {

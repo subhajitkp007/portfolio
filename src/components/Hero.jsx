@@ -111,22 +111,18 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <motion.div className="hero-badge" variants={itemVariants}>
-          <span className="badge-dot" />
-          <span>Available for work</span>
-        </motion.div>
-
         <motion.h1 className="hero-title" variants={itemVariants}>
           Hi, I&apos;m{' '}
           <span className="highlight">Subhajit</span>
           <br />
-          <span className="hero-role">Full Stack Developer</span>
+          <span className="hero-role">Specialist Programmer at Infosys</span>
         </motion.h1>
 
         <motion.p className="hero-description" variants={itemVariants}>
-          Passionate software engineer crafting modern, scalable web applications
-          with cutting-edge technologies. Turning complex problems into elegant
-          digital solutions.
+          London-based software engineer focused on scalable digital solutions,
+          continuous learning, and practical innovation across cloud, AI, and
+          full-stack development. As a Specialist Programmer, I build impactful
+          solutions for complex client and platform engineering challenges.
         </motion.p>
 
         <motion.div className="hero-actions" variants={itemVariants}>
@@ -172,9 +168,9 @@ export default function Hero() {
           variants={itemVariants}
         >
           {[
-            { value: '3+', label: 'Years Experience' },
-            { value: '20+', label: 'Projects Done' },
-            { value: '10+', label: 'Happy Clients' },
+            { value: '5K+', label: 'LinkedIn Followers' },
+            { value: '500+', label: 'Connections' },
+            { value: 'Infosys', label: 'Current Company' },
           ].map((stat) => (
             <div key={stat.label} className="stat-item">
               <span className="stat-value highlight">{stat.value}</span>

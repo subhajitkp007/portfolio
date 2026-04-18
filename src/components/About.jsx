@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FiCode, FiServer, FiDatabase, FiSmartphone } from 'react-icons/fi';
+import { FiCloud, FiCpu, FiDatabase, FiLayers } from 'react-icons/fi';
 import './About.css';
 
 const highlights = [
-  { icon: FiCode, label: 'Frontend Dev', color: '#6c63ff' },
-  { icon: FiServer, label: 'Backend Dev', color: '#00d4ff' },
-  { icon: FiDatabase, label: 'Database', color: '#ff6b6b' },
-  { icon: FiSmartphone, label: 'Mobile Dev', color: '#ffc107' },
+  { icon: FiCpu, label: 'AI & GenAI', color: '#6c63ff' },
+  { icon: FiCloud, label: 'Cloud (GCP)', color: '#00d4ff' },
+  { icon: FiDatabase, label: 'Big Data', color: '#ff6b6b' },
+  { icon: FiLayers, label: 'Architecture', color: '#ffc107' },
 ];
 
 export default function About() {
@@ -80,30 +80,31 @@ export default function About() {
             </h3>
 
             <p>
-              I&apos;m Subhajit Mahata, a Full Stack Developer based in West Bengal, India.
-              With over 3 years of professional experience, I specialize in building
-              scalable web applications using modern technologies like React, Node.js,
-              and cloud platforms.
+              I&apos;m Subhajit Mahata, currently working with Infosys, an
+              India-based global technology company, and based in London Area,
+              United Kingdom. I focus on engineering reliable, scalable software
+              solutions and continuously improving my craft.
             </p>
 
             <p>
-              My journey in software development started with curiosity about how
-              websites work, and evolved into a passion for crafting robust,
-              user-friendly applications. I enjoy solving complex problems and
-              turning ideas into reality through clean, efficient code.
+              As I share on LinkedIn, I&apos;m in the process of becoming the best
+              version of myself. I bring a highly motivated mindset to every
+              challenge and enjoy working where technology meets impact.
             </p>
 
             <p>
-              When I&apos;m not coding, you can find me exploring new technologies,
-              contributing to open source, or sharing knowledge with the developer community.
+              Beyond project work, I actively engage in learning initiatives,
+              industry activities, and technical communities around software,
+              cloud, and AI.
             </p>
 
             <div className="about-info">
               {[
                 { label: 'Name', value: 'Subhajit Mahata' },
-                { label: 'Location', value: 'West Bengal, India' },
-                { label: 'Email', value: 'subhajitmahata@email.com' },
-                { label: 'Availability', value: 'Open to opportunities' },
+                { label: 'Location', value: 'London Area, United Kingdom' },
+                { label: 'Current Company', value: 'Infosys' },
+                { label: 'Education', value: 'RKMGEC, Purulia (B.Tech CSE)' },
+                { label: 'Network', value: '5K followers · 500+ connections' },
               ].map((item) => (
                 <div key={item.label} className="info-item">
                   <span className="info-label">{item.label}:</span>

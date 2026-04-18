@@ -68,17 +68,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className="btn-primary nav-cta"
-          onClick={(e) => {
-            e.preventDefault();
-            handleNavClick('Contact', '#contact');
-          }}
-        >
-          Hire Me
-        </a>
-
         <button
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
